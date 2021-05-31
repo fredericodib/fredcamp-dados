@@ -1,7 +1,16 @@
 // Encontre o número duplicado no array
-// Não poode ordenar o array
+// Não pode ordenar o array
 function ex(entrada) {
-  return entrada;
+  let saida;
+  entrada.forEach(element => {
+    if (entrada.lastIndexOf(element) !== -1) {
+      if (entrada.lastIndexOf(element) !== entrada.indexOf(element)){
+        saida = element
+      }
+    }
+  });
+
+  return saida;
 }
 
 module.exports = ex;
