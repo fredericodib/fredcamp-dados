@@ -3,9 +3,7 @@
 function ex(entrada) {
   let media;
   let soma = 0;
-  for (i = 0; i < entrada.length; i++) {
-    soma += entrada[i];
-  }
+  entrada.forEach((element) => (soma += element));
   media = soma / entrada.length;
   return media;
 }
