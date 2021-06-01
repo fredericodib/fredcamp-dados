@@ -5,6 +5,7 @@
 // a primeira coluna deve ser o id
 // a segunda coluna deve ser o nome
 // a terceira coluna deve ser a idade
+// Dica: Object entries e map
 function ex(entrada) {
   return entrada;
 }
