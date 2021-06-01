@@ -33,11 +33,17 @@ entrada.map((e) => e ** 2);
 
 ### Pergaminho 2
 
-```javascrip
+```javascript
 entrada.map((e) => (e ** 2));
 ```
 
 ### Pergaminho 3
+
+```javascript
+entrada.map((e) => { e ** 2 });
+```
+
+### Pergaminho 4
 
 ```javascript
 entrada.map((e) => {
@@ -45,23 +51,12 @@ entrada.map((e) => {
 });
 ```
 
-### Pergaminho 4
+### Pergaminho 5
 
 ```javascript
 entrada.map((e) => {
   return e ** 2;
 });
-```
-
-### Pergaminho 5
-
-```javascript
-function minhaFunc(n) {
-  const retorno = n * n;
-  return retorno;
-}
-
-entrada.map(minhaFunc);
 ```
 
 ### Pergaminho 6
@@ -72,10 +67,21 @@ function minhaFunc(n) {
   return retorno;
 }
 
-entrada.map((e) => minhaFunc(e));
+entrada.map(minhaFunc);
 ```
 
 ### Pergaminho 7
+
+```javascript
+function minhaFunc(n) {
+  const retorno = n * n;
+  return retorno;
+}
+
+entrada.map((e) => minhaFunc(e));
+```
+
+### Pergaminho 8
 
 ```javascript
 function minhaFunc(n) {
@@ -85,7 +91,25 @@ function minhaFunc(n) {
 entrada.map((e) => minhaFunc(e));
 ```
 
+### Pergaminho 9
+
+```javascript
+const minhaFunc = (n) => {
+  return n * n;
+};
+
+entrada.map((e) => minhaFunc(e));
+```
+
+### Pergaminho 10
+
+```javascript
+const minhaFunc = (n) => n * n;
+
+entrada.map((e) => minhaFunc(e));
+```
+
 Agora que Muclara retornou de sua viagem ela deve responder
-a pergunta que não que calar:
+a pergunta que não que calar(Pode responder de forma simples):
 
 <Resposta da Blinda aqui S2>
