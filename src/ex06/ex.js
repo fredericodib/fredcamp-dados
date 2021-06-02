@@ -2,10 +2,7 @@
 // Devolva um array com a idade das pessas
 // Dica: pequise por Object keys, values, entries
 function ex(entrada) {
-  let saida = [];
-  for (const key in entrada){
-    saida.push(entrada[key])
-  }
+  let saida = Object.values(entrada)
 
   return saida;
 }
