@@ -3,19 +3,9 @@
 function ex(entrada) {
   let saida;
   let repet = {};
-  entrada.forEach((element) => {
-    if (!repet[element]) {
-      repet[element] = 1;
-    } else {
-      repet[element] += 1;
-    }
-  });
+  entrada.forEach((e) => (!repet[e]? (repet[e] = 1) : (repet[e] += 1)));
 
-  for (key in repet) {
-    if (repet[key] !== 1) {
-      saida = Number(key);
-    }
-  }
+  saida = Number(Object.entries(repet).filter((el)=> el[1]>1)[0][0])
 
   return saida;
 }
