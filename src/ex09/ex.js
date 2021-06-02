@@ -2,11 +2,8 @@
 // Cada objeto possui duas chaves, nome e idade
 // Retorne um array com todas as idades ordenadas
 function ex(entrada) {
-  let saida = [];
-
-  let idades = entrada.map((element) => element.idade);
-
-  saida = idades.sort((a, b) => a - b);
+  let saida = entrada.map((e) => e.idade).sort((a, b) => a - b);
+  
   return saida;
 }
 
@@ -23,5 +20,15 @@ module.exports = ex;
 
 //   idades.filter(Number)
 //   saida = idades.sort(function(a, b){return a-b})
+//   return saida;
+// }
+
+// RESOLUÇÃO ANTIGA 2
+// function ex(entrada) {
+//   let saida = [];
+
+//   let idades = entrada.map((element) => element.idade);
+
+//   saida = idades.sort((a, b) => a - b);
 //   return saida;
 // }
