@@ -13,16 +13,16 @@ ainda é bastente lembrada.
 "Muclara, você realmente entende arrow functions?"
 
 Logo em seguida Senhor Chan deu para Muclara diversos
-pergaminhos milenares, encontrado pelo avô de Jackie
-a mais de 100 anos embaixo de uma duna de areia no Egito
+pergaminhos milenares, encontrados pelo avô de Jackie
+há mais de 100 anos embaixo de uma duna de areia no Egito
 antigo. Dizem os mais tolos, ou talvez mais corajosos, que embaixo
-dessas dunas haviam as ruianas de uma civilização antiga
-chamada Atlântida. Nestes pergaminhos havia escrito diversos
+dessas dunas haviam as ruínas de uma civilização antiga
+chamada Atlântida. Nestes pergaminhos haviam escrito diversos
 textos Javascriptos.
 
 Agora, minha cara Muclara, quais pergaminhos são sinônimos?
 quais são diferentes? Qual a diferença entre eles? Para resolver
-isso Jackie aconselhou Muclara a consultar o sabio Gugou, pergunta-lo
+isso Jackie aconselhou Muclara a consultar o sabio Gugou, perguntá-lo
 sobre "arrow functions" e "callback funcktions".
 
 ### Pergaminho 1
