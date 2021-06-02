@@ -3,11 +3,21 @@
 // Dica: pequise por Object keys, values, entries
 function ex(entrada) {
   let saida = [];
-  for (const key in entrada){
-    saida.push({[key]: entrada[key]})
+  for (var [key, value] of Object.entries(entrada)) {
+    saida.push({ [key]: value });
   }
 
   return saida;
 }
 
 module.exports = ex;
+
+// RESOLUÇÃO ANTIGA
+// function ex(entrada) {
+//   let saida = [];
+//   for (const key in entrada){
+//     saida.push({[key]: entrada[key]})
+//   }
+
+//   return saida;
+// }
