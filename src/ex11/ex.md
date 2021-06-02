@@ -23,7 +23,7 @@ textos Javascriptos.
 Agora, minha cara Muclara, quais pergaminhos são sinônimos?
 quais são diferentes? Qual a diferença entre eles? Para resolver
 isso Jackie aconselhou Muclara a consultar o sabio Gugou, perguntá-lo
-sobre "arrow functions" e "callback funcktions".
+sobre "arrow functions" e "callback functions".
 
 ### Pergaminho 1
 
@@ -113,3 +113,21 @@ Agora que Muclara retornou de sua viagem ela deve responder
 a pergunta que não que calar(Pode responder de forma simples):
 
 <Resposta da Blinda aqui S2>
+[TE AMO VOCÊ É INCRÍVEL]
+
+1. Arrow Functions
+- Não devem ser usadas como métodos, nem como construtores
+- O uso de this representa o objeto que definiu a arrow function, ao contrário das funções normais, onde o this representa o objeto que chamou a função, e não se determina o this do escopo do ambiente sem usar um bind
+- Pra funções normais dá pra usar a função antes de declarar, para arrow functions não
+
+2. Callback functions
+- Função passada como argumento para outra função
+- Ajuda a controlar a ordem
+- Lembrar de não usar os parênteses quando for passar. Ex: myCalculator(5, 5, myDisplayer) - myDisplayer é a callback
+- São melhores pra funções assíncronas
+
+3. Respostas
+- Pergaminhos 1, 2, 5, 6, 7, 9 e 10 são "iguais" e produzem o resultado desejado
+- Pergaminho 3 - não se usa {} quando o retorno é na mesma linha
+- Pergaminho 4 - quando o retorno pula linha, tem que ser declarado explicitamente
+- Pergaminho 8 - precisa de um retorno explícito para não ficar indefinido
