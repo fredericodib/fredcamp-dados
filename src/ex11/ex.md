@@ -128,6 +128,6 @@ a pergunta que não que calar(Pode responder de forma simples):
 
 3. Respostas
 - Pergaminhos 1, 2, 5, 6, 7, 9 e 10 são "iguais" e produzem o resultado desejado
-- Pergaminho 3 - não se usa {} quando o retorno é na mesma linha
+- Pergaminho 3 - não se usa {} quando o retorno é na mesma linha e implícito
 - Pergaminho 4 - quando o retorno pula linha, tem que ser declarado explicitamente
 - Pergaminho 8 - precisa de um retorno explícito para não ficar indefinido
