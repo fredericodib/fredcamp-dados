@@ -8,3 +8,14 @@ function ex(entrada) {
 }
 
 module.exports = ex;
+
+
+// RESOLUÇÃO ANTIGA
+// function ex(entrada) {
+//   let saida = [];
+//   for (const key in entrada){
+//     saida.push(entrada[key])
+//   }
+
+//   return saida;
+// }
