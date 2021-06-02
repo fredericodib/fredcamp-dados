@@ -2,12 +2,22 @@
 // Devolva um array com o nome das pessas
 // Dica: pequise por Object keys, values, entries
 function ex(entrada) {
-  let saida = [];
-  for (const key in entrada){
-    saida.push(String(key))
-  }
+  let saida = Object.keys(entrada)
 
   return saida;
 }
 
 module.exports = ex;
+
+
+
+
+// RESOLUÇÃO ANTIGA
+// function ex(entrada) {
+//   let saida = [];
+//   for (const key in entrada){
+//     saida.push(String(key))
+//   }
+
+//   return saida;
+// }
