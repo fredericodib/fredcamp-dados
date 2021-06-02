@@ -2,7 +2,7 @@
 // Devolva um array com varios objetos, cada um sendo uma pessoa
 // Dica: pequise por Object keys, values, entries
 function ex(entrada) {
-  const saida = Object.entries(entrada).map((e) => ({ [e[0]]: e[1] }));
+  const saida = Object.entries(entrada).map(([key, value]) => ({ [key]: value }));
 
   return saida;
 }
