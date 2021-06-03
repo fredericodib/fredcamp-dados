@@ -4,7 +4,10 @@
 // Dica: Parecido com a questão anterior, mas vc vai precisar colocar
 // um pouco mais de lógica na função de ordenar, talvez adicionar uns if
 function ex(entrada) {
-  return entrada;
+  const saida = entrada
+    .sort((a, b) => a.tamanho - b.tamanho)
+    .sort((a, b) => a.idade - b.idade);
+  return saida;
 }
 
 module.exports = ex;
