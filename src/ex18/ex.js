@@ -8,6 +8,16 @@
 // "totalPrice" cujo o valor seja a soma do valor de
 // todos os quartos.
 function ex(entrada) {
+  const quarto = Object.entries(entrada.quartos)
+  let soma = 0
+  const saida = entrada
+
+  for (i in quarto){
+    soma += quarto[i][1].valor
+  }
+
+  saida.totalPrice = soma
+
   return entrada;
 }
 
