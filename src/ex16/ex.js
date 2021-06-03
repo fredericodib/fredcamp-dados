@@ -3,7 +3,8 @@
 // Dica: na função sort, a variavel a,b nem sempre
 // são inteiro, nesse caso a e b serão objetos.
 function ex(entrada) {
-  return entrada;
+  const saida = entrada.sort((a, b) => a.idade - b.idade)
+  return saida;
 }
 
 module.exports = ex;
