@@ -7,7 +7,12 @@
 // no front.
 // Dica: Object entries e map
 function ex(entrada) {
-  return entrada;
+  const saida = Object.entries(entrada).map(([k, v]) => ({
+    id: k,
+    nome: v.nome,
+    idade: v.idade,
+  }));
+  return saida;
 }
 
 module.exports = ex;
