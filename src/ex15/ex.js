@@ -7,7 +7,9 @@
 // a terceira coluna deve ser a idade
 // Dica: Object entries e map
 function ex(entrada) {
-  return entrada;
+  const saida = Object.entries(entrada).map(([k, v]) => [k, v.nome, v.idade]);
+
+  return saida;
 }
 
 module.exports = ex;
