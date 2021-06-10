@@ -71,7 +71,7 @@ const entrada = [
       },
     },
   },
-  25,
+  25
 ];
 
 module.exports = entrada;
