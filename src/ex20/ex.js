@@ -16,39 +16,37 @@
 // Se tiver ficado confuso, só me falar
 // Dica2: separando em funcoes ficara mais clean, mas vai ficar grande de tdo jeito
 // Dica3: Pesquise sobre "js reduce function" pode facilitar
-let valores = [];
-let users = [];
-let soma;
-
-for (user in entrada[0]) {
-  users.push(entrada[0][user].nome);
-  soma = 0;
-  casas = Object.values(entrada[0][user].casas);
-  for (casa in casas) {
-    for (quarto in casas[casa]) {
-      soma +=
-        casas[casa][quarto].diaria * entrada[1] +
-        casas[casa][quarto].taxaDeServico;
-    }
-  }
-  valores.push(soma);
-}
-
-let resp = {};
-for (i = 0; (i < valores.length); i++) {
-  resp[users[i]] = valores[i];
-}
-
-const sorted = Object.fromEntries(
-  Object.entries(resp).sort(([,a],[,b]) => a-b)
-);
-
-let saida = [Object.keys(sorted), Object.values(sorted)]
-
-console.log(saida);
-
 function ex(entrada) {
-  return entrada;
+  let valores = [];
+  let users = [];
+  let soma;
+
+  for (user in entrada[0]) {
+    users.push(entrada[0][user].nome);
+    soma = 0;
+    casas = Object.values(entrada[0][user].casas);
+    for (casa in casas) {
+      for (quarto in casas[casa]) {
+        soma +=
+          casas[casa][quarto].diaria * entrada[1] +
+          casas[casa][quarto].taxaDeServico;
+      }
+    }
+    valores.push(soma);
+  }
+
+  let resp = {};
+  for (i = 0; i < valores.length; i++) {
+    resp[users[i]] = valores[i];
+  }
+
+  const sorted = Object.fromEntries(
+    Object.entries(resp).sort(([, a], [, b]) => a - b)
+  );
+
+  let saida = [Object.keys(sorted), Object.values(sorted)];
+
+  return saida;
 }
 
 module.exports = ex;
