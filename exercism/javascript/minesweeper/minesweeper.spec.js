@@ -57,13 +57,13 @@ describe(')', () => {
     expect(annotate(input)).toEqual(expected);
   });
 
-  xtest('handles cross', () => {
+  test('handles cross', () => {
     const input = ['  *  ', '  *  ', '*****', '  *  ', '  *  '];
     const expected = [' 2*2 ', '25*52', '*****', '25*52', ' 2*2 '];
     expect(annotate(input)).toEqual(expected);
   });
 
-  xtest('handles large minefield', () => {
+  test('handles large minefield', () => {
     const input = [' *  * ', '  *   ', '    * ', '   * *', ' *  * ', '      '];
     const expected = [
       '1*22*1',
