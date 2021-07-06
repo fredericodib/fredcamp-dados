@@ -1,8 +1,11 @@
 //
 // This is only a SKELETON file for the 'Minesweeper' exercise. It's been provided as a
 // convenience to get you started writing code faster.
+
+import { count } from "console";
+
 //
-function sideCheck(input) {
+function Check(input) {
   let output = [];
   for (let j = 0; j < input.length; j++) {
     let strOutput = "";
@@ -18,13 +21,33 @@ function sideCheck(input) {
         counter += 1;
       }
       // vertical não primeiro
-      if (j !== 0 && input[j-1][i]=="*"){
-        counter +=1
+      if (j !== 0 && input[j - 1][i] == "*") {
+        counter += 1;
       }
       // vertical não último
-      if (j !== input.length-1 && input[j+1][i]=="*"){
-        counter += 1
-      }      
+      if (j !== input.length - 1 && input[j + 1][i] == "*") {
+        counter += 1;
+      }
+      // diagonal esquerda cima
+      if (j !== 0 && i !== 0 && input[j - 1][i - 1] == "*") {
+        counter += 1;
+      }
+      // diagonal esquerda baixo
+      if (j !== input.length - 1 && i !== 0 && input[j + 1][i - 1] == "*") {
+        counter += 1;
+      }
+      // diagonal direita cima
+      if (j !== 0 && i !== str.length - 1 && input[j - 1][i + 1]=="*") {
+        counter += 1;
+      }
+      // diagonal direita baixo
+      if (
+        j !== input.length - 1 &&
+        i !== str.length - 1 &&
+        input[j + 1][i + 1] == "*"
+      ) {
+        counter += 1;
+      }
       // mudar valor string
       if (str[i] != "*") {
         if (counter !== 0) {
@@ -41,11 +64,9 @@ function sideCheck(input) {
   return output;
 }
 
-
-
 export const annotate = (input) => {
-  let firstCheck = sideCheck(input);
-  return firstCheck;
+  let check = Check(input);
+  return check;
   // 1. contar pros lados (separar 1, meio e último elemento da string)
   // 2. contar vertical (separar 1, meio e última linha)
   // 3. contar diagonal (separar por linha e por elemento)
