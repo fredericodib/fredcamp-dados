@@ -4,17 +4,28 @@
 //
 function sideCheck(input) {
   let output = [];
-  let strOutput = "";
   for (let j = 0; j < input.length; j++) {
+    let strOutput = "";
     let str = input[j];
     for (let i = 0; i < str.length; i++) {
       let counter = 0;
+      // horizontal não primeiro
       if (i !== 0 && str[i - 1] == "*" && str[i] !== "*") {
         counter += 1;
       }
+      // horizontal não último
       if (i !== str.length - 1 && str[i + 1] == "*" && str[i] !== "*") {
         counter += 1;
       }
+      // vertical não primeiro
+      if (j !== 0 && input[j-1][i]=="*"){
+        counter +=1
+      }
+      // vertical não último
+      if (j !== input.length-1 && input[j+1][i]=="*"){
+        counter += 1
+      }      
+      // mudar valor string
       if (str[i] != "*") {
         if (counter !== 0) {
           strOutput += String(counter);
@@ -29,6 +40,8 @@ function sideCheck(input) {
   }
   return output;
 }
+
+
 
 export const annotate = (input) => {
   let firstCheck = sideCheck(input);
